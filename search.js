@@ -71,15 +71,11 @@ function getFilesFromDir(dir, fileTypes) {
 
 
 function handle() {
-    if(process.argv[2]==undefined){
+    if(process.argv[2]==undefined||process.argv[3]==undefined){
         console.log("USAGE: node search [EXT] [TEXT]") ;
         //return "USAGE: node search [EXT] [TEXT]";
 
     } 
-    if(process.argv[3]==undefined){
-        console.log("USAGE: node search [EXT] [TEXT]");
-        //return "USAGE: node search [EXT] [TEXT]";
-    }
     else{
         //console.log(getContainFile(like,getFilesFromDir("./", [fileType]),fileType));
         //return getContainFile(like,getFilesFromDir("./", [fileType]),fileType);
